@@ -1,4 +1,4 @@
-# makedon
+# Havee Makedon Personal Webpage
 
 Modern personal portfolio for **Havee Makedon** built with **Vite + React + TypeScript**.
 
