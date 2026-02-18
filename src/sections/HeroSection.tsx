@@ -28,6 +28,9 @@ export function HeroSection() {
             <a className="btn btn-secondary" href="#contact">
               Contact
             </a>
+            <a className="btn btn-secondary" href="https://github.com/hhmakedon" target="_blank" rel="noreferrer">
+              GitHub
+            </a>
           </div>
         </div>
 

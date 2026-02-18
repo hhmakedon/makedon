@@ -15,9 +15,7 @@ export const projects: Project[] = [
     description:
       'A full-stack classroom rewards application serving daily student engagement with role-based experiences, analytics tracking, and Firebase-backed workflows.',
     tags: ['Web App', 'Firebase', 'GCP', 'Analytics'],
-    liveUrl: 'https://haveerewards.web.app/',
-    secondaryUrl: 'https://github.com/hhmakedon',
-    secondaryLabel: 'GitHub Profile'
+    liveUrl: 'https://haveerewards.web.app/'
   },
   {
     title: 'Auto Fury LLC',
