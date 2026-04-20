@@ -32,6 +32,13 @@ export const projects: Project[] = [
     liveUrl: 'https://hhmakedon.github.io/ShoppingListApp/'
   },
   {
+    title: 'Book Reviews App',
+    description:
+      'A full-stack personal book review web app built for tracking books, writing reviews, and organizing reading activity in one place.',
+    tags: ['Full-Stack', 'Web App', 'Books', 'Reviews'],
+    liveUrl: 'https://github.com/hhmakedon/bookreviews'
+  },
+  {
     title: 'Website Basics Demo',
     description:
       'A classroom teaching demo that helps students understand what websites are, how pages are structured, and how content is organized online.',
