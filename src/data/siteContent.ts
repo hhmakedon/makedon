@@ -36,7 +36,7 @@ export const projects: Project[] = [
     description:
       'A full-stack personal book review web app built for tracking books, writing reviews, and organizing reading activity in one place.',
     tags: ['Full-Stack', 'Web App', 'Books', 'Reviews'],
-    liveUrl: 'https://github.com/hhmakedon/bookreviews'
+    liveUrl: 'https://hhmakedon.github.io/bookreviews/'
   },
   {
     title: 'Website Basics Demo',
