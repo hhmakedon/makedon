@@ -1,5 +1,6 @@
 import { useEffect, useState } from 'react';
 import { RevealSection } from '../components/RevealSection';
+import { ArrowRight, Copy, Github, Linkedin, Mail } from '../components/icons';
 
 const emailAddress = 'haveemakedon1@gmail.com';
 
@@ -13,7 +14,7 @@ export function ContactSection() {
 
     const timeout = window.setTimeout(() => {
       setToastMessage('');
-    }, 2000);
+    }, 2200);
 
     return () => {
       window.clearTimeout(timeout);
@@ -25,31 +26,45 @@ export function ContactSection() {
       await navigator.clipboard.writeText(emailAddress);
       setToastMessage('Email copied to clipboard');
     } catch {
-      setToastMessage('Copy failed. Please copy manually.');
+      setToastMessage('Copy failed — please copy manually.');
     }
   };
 
   return (
-    <RevealSection id="contact" className="section-muted">
+    <RevealSection id="contact" className="section-muted contact-section">
       <div className="container">
-        <div className="section-head">
-          <p className="eyebrow">Get In Touch</p>
-          <h2>Contact</h2>
+        <p className="eyebrow" style={{ justifyContent: 'center' }}>
+          05 — Get in touch
+        </p>
+        <h2 className="contact-headline">
+          Let's build something <span className="text-grad">great</span>.
+        </h2>
+        <p className="contact-sub">
+          Always happy to talk through ideas, projects, or collaborations. The fastest way to reach
+          me is email.
+        </p>
+
+        <div className="contact-actions">
+          <a className="btn btn-primary" href={`mailto:${emailAddress}`}>
+            <Mail />
+            {emailAddress}
+            <ArrowRight className="arrow" />
+          </a>
+          <button className="btn btn-secondary" type="button" onClick={handleCopyEmail}>
+            <Copy />
+            Copy email
+          </button>
         </div>
 
-        <div className="contact-card" role="list" aria-label="Contact links">
-          <a role="listitem" href={`mailto:${emailAddress}`}>
-            {emailAddress}
-          </a>
-          <a role="listitem" href="https://www.linkedin.com/in/haveemakedon/" target="_blank" rel="noreferrer">
+        <div className="contact-socials">
+          <a href="https://www.linkedin.com/in/haveemakedon/" target="_blank" rel="noreferrer">
+            <Linkedin />
             linkedin.com/in/haveemakedon
           </a>
-          <a role="listitem" href="https://github.com/hhmakedon" target="_blank" rel="noreferrer">
+          <a href="https://github.com/hhmakedon" target="_blank" rel="noreferrer">
+            <Github />
             github.com/hhmakedon
           </a>
-          <button className="btn btn-secondary copy-button" type="button" onClick={handleCopyEmail}>
-            Copy Email
-          </button>
         </div>
 
         <div className={`toast ${toastMessage ? 'toast-visible' : ''}`} role="status" aria-live="polite">

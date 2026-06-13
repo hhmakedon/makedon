@@ -6,16 +6,21 @@ type NavbarProps = {
   items: NavItem[];
   activeSection: string;
   theme: Theme;
+  scrolled: boolean;
   onToggleTheme: () => void;
 };
 
-export function Navbar({ items, activeSection, theme, onToggleTheme }: NavbarProps) {
+export function Navbar({ items, activeSection, theme, scrolled, onToggleTheme }: NavbarProps) {
   return (
-    <header className="site-header">
-      <div className="container nav-wrap">
-        <a className="wordmark" href="#home">
-          Havee Makedon
+    <header className={`site-header ${scrolled ? 'is-scrolled' : ''}`}>
+      <div className="container nav-shell">
+        <a className="brand" href="#home" aria-label="Havee Makedon — home">
+          <span className="brand-mark" aria-hidden="true">
+            HM
+          </span>
+          <span className="brand-name">Havee Makedon</span>
         </a>
+
         <nav aria-label="Primary">
           <ul className="nav-list">
             {items.map((item) => (
@@ -25,14 +30,12 @@ export function Navbar({ items, activeSection, theme, onToggleTheme }: NavbarPro
                 </a>
               </li>
             ))}
-            <li>
-              <a href="https://github.com/hhmakedon" target="_blank" rel="noreferrer">
-                GitHub
-              </a>
-            </li>
           </ul>
         </nav>
-        <ThemeToggle theme={theme} onToggle={onToggleTheme} />
+
+        <div className="nav-actions">
+          <ThemeToggle theme={theme} onToggle={onToggleTheme} />
+        </div>
       </div>
     </header>
   );

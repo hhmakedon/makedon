@@ -6,14 +6,20 @@ export function SkillsSection() {
     <RevealSection id="skills" className="section-muted">
       <div className="container">
         <div className="section-head">
-          <p className="eyebrow">Capabilities</p>
-          <h2>Skills</h2>
+          <p className="eyebrow">03 — Capabilities</p>
+          <h2>Skills &amp; Tools</h2>
+          <p className="section-sub">
+            The stack I reach for across full-stack delivery, cloud, and data work.
+          </p>
         </div>
 
         <div className="skills-grid">
-          {skillGroups.map((group) => (
+          {skillGroups.map((group, index) => (
             <article key={group.title}>
-              <h3>{group.title}</h3>
+              <h3>
+                <span className="num">{String(index + 1).padStart(2, '0')}</span>
+                {group.title}
+              </h3>
               <ul className="badge-list" aria-label={group.title}>
                 {group.items.map((item) => (
                   <li key={item}>{item}</li>

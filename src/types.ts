@@ -5,6 +5,7 @@ export type Project = {
   liveUrl: string;
   secondaryUrl?: string;
   secondaryLabel?: string;
+  featured?: boolean;
 };
 
 export type ExperienceItem = {
@@ -21,4 +22,16 @@ export type SkillGroup = {
 export type NavItem = {
   id: string;
   label: string;
+};
+
+export type Stat = {
+  value: string;
+  accent?: string;
+  label: string;
+};
+
+export type Highlight = {
+  icon: 'teaching' | 'web' | 'cloud';
+  title: string;
+  detail: string;
 };

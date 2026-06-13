@@ -2,6 +2,7 @@ import { useMemo, useState } from 'react';
 import { projects } from '../data/siteContent';
 import { ProjectCard } from '../components/ProjectCard';
 import { RevealSection } from '../components/RevealSection';
+import { Search } from '../components/icons';
 
 const allTags = ['All', ...Array.from(new Set(projects.flatMap((project) => project.tags)))];
 
@@ -29,17 +30,22 @@ export function ProjectsSection() {
     <RevealSection id="projects" className="section-muted">
       <div className="container">
         <div className="section-head">
-          <p className="eyebrow">Selected Work</p>
+          <p className="eyebrow">01 — Selected Work</p>
           <h2>Projects</h2>
+          <p className="section-sub">
+            A mix of production applications and teaching tools — built end to end, deployed, and
+            used in the real world.
+          </p>
         </div>
 
         <div className="project-toolbar">
           <label className="search-field" htmlFor="project-search">
             <span className="sr-only">Search projects</span>
+            <Search />
             <input
               id="project-search"
               type="search"
-              placeholder="Search projects or tags"
+              placeholder="Search projects or tags…"
               value={searchTerm}
               onChange={(event) => setSearchTerm(event.target.value)}
             />
@@ -60,11 +66,15 @@ export function ProjectsSection() {
           </div>
         </div>
 
-        <div className="project-grid">
-          {filteredProjects.map((project) => (
-            <ProjectCard key={project.title} project={project} />
-          ))}
-        </div>
+        {filteredProjects.length ? (
+          <div className="project-grid">
+            {filteredProjects.map((project, index) => (
+              <ProjectCard key={project.title} project={project} index={index} />
+            ))}
+          </div>
+        ) : (
+          <p className="project-empty">No projects match that filter — try another tag.</p>
+        )}
       </div>
     </RevealSection>
   );

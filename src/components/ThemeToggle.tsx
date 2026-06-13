@@ -1,4 +1,5 @@
 import type { Theme } from '../hooks/useTheme';
+import { Moon, Sun } from './icons';
 
 type ThemeToggleProps = {
   theme: Theme;
@@ -16,8 +17,7 @@ export function ThemeToggle({ theme, onToggle }: ThemeToggleProps) {
       aria-label={`Switch to ${nextTheme} theme`}
       title={`Switch to ${nextTheme} theme`}
     >
-      <span aria-hidden="true">{theme === 'light' ? '◐' : '◑'}</span>
-      <span className="theme-toggle-label">{theme === 'light' ? 'Dark' : 'Light'}</span>
+      {theme === 'light' ? <Moon /> : <Sun />}
     </button>
   );
 }

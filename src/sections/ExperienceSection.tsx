@@ -6,12 +6,13 @@ export function ExperienceSection() {
     <RevealSection id="experience">
       <div className="container">
         <div className="section-head">
-          <p className="eyebrow">Career Snapshot</p>
+          <p className="eyebrow">04 — Career</p>
           <h2>Experience</h2>
         </div>
+
         <ol className="timeline">
           {experience.map((item) => (
-            <li key={item.title}>
+            <li className="timeline-item" key={item.title}>
               <p className="timeline-period">{item.period}</p>
               <h3>{item.title}</h3>
               <p>{item.detail}</p>

@@ -3,23 +3,47 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Havee Makedon | Web Developer, Cloud Builder, Educator</title>
+    <title>Havee Makedon — Software Engineer · Cloud · Educator</title>
     <meta
       name="description"
-      content="Portfolio of Havee Makedon: modern web apps, cloud-powered solutions, and technical education projects."
+      content="Havee Makedon builds practical, cloud-backed web products. Portfolio of full-stack applications, Google Cloud work, and technical education projects."
     />
     <meta name="robots" content="index,follow" />
 
-    <meta property="og:title" content="Havee Makedon | Web Developer, Cloud Builder, Educator" />
+    <meta property="og:title" content="Havee Makedon — Software Engineer · Cloud · Educator" />
     <meta
       property="og:description"
-      content="Explore projects, experience, and skills across full-stack development, cloud tooling, and classroom technology leadership."
+      content="Full-stack engineering, Google Cloud, and technical education — selected work, experience, and skills."
     />
     <meta property="og:type" content="website" />
     <meta property="og:url" content="https://hhmakedon.github.io/makedon/" />
-    <meta name="theme-color" content="#315efb" />
+    <meta name="theme-color" content="#0a0b0f" media="(prefers-color-scheme: dark)" />
+    <meta name="theme-color" content="#ffffff" media="(prefers-color-scheme: light)" />
 
     <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&family=JetBrains+Mono:wght@400;500;600&display=swap"
+      rel="stylesheet"
+    />
+
+    <script>
+      // Apply the saved theme before paint to avoid a flash.
+      (function () {
+        try {
+          var stored = localStorage.getItem('site-theme');
+          var theme =
+            stored === 'light' || stored === 'dark'
+              ? stored
+              : window.matchMedia('(prefers-color-scheme: dark)').matches
+              ? 'dark'
+              : 'light';
+          document.documentElement.setAttribute('data-theme', theme);
+        } catch (e) {}
+      })();
+    </script>
   </head>
   <body>
     <div id="root"></div>

@@ -1,4 +1,4 @@
-import type { ExperienceItem, NavItem, Project, SkillGroup } from '../types';
+import type { ExperienceItem, Highlight, NavItem, Project, SkillGroup, Stat } from '../types';
 
 export const navItems: NavItem[] = [
   { id: 'home', label: 'Home' },
@@ -9,13 +9,38 @@ export const navItems: NavItem[] = [
   { id: 'contact', label: 'Contact' }
 ];
 
+export const heroStats: Stat[] = [
+  { value: '6', accent: '+', label: 'Production apps shipped' },
+  { value: "'25", label: 'Google Cloud intern' },
+  { value: '4', accent: 'yrs', label: 'Teaching & building CS' }
+];
+
+export const marqueeItems: string[] = [
+  'JavaScript',
+  'TypeScript',
+  'React',
+  'AngularJS',
+  'PHP',
+  'Python',
+  'SQL',
+  'Firebase',
+  'Cloud Run',
+  'BigQuery',
+  'Cloud SQL',
+  'Docker',
+  'C++',
+  'Java',
+  'REST APIs'
+];
+
 export const projects: Project[] = [
   {
     title: 'Havee Rewards',
     description:
-      'A full-stack classroom rewards application serving daily student engagement with role-based experiences, analytics tracking, and Firebase-backed workflows.',
+      'A full-stack classroom rewards platform serving daily student engagement with role-based experiences, analytics tracking, and Firebase-backed workflows.',
     tags: ['Web App', 'Firebase', 'GCP', 'Analytics'],
-    liveUrl: 'https://haveerewards.web.app/'
+    liveUrl: 'https://haveerewards.web.app/',
+    featured: true
   },
   {
     title: 'Auto Fury LLC',
@@ -36,7 +61,8 @@ export const projects: Project[] = [
     description:
       'A full-stack personal book review web app built for tracking books, writing reviews, and organizing reading activity in one place.',
     tags: ['Full-Stack', 'Web App', 'Books', 'Reviews'],
-    liveUrl: 'https://hhmakedon.github.io/bookreviews/'
+    liveUrl: 'https://hhmakedon.github.io/bookreviews/',
+    featured: true
   },
   {
     title: 'Website Basics Demo',
@@ -51,6 +77,24 @@ export const projects: Project[] = [
       'A teaching-focused demo introducing phishing risk signals and practical habits for recognizing suspicious messages and links.',
     tags: ['Education Demo', 'Cyber Safety', 'Teaching'],
     liveUrl: 'https://hhmakedon.github.io/phishdemo/'
+  }
+];
+
+export const highlights: Highlight[] = [
+  {
+    icon: 'web',
+    title: 'Full-Stack Engineering',
+    detail: 'Maintainable builds with JavaScript, AngularJS, PHP, and REST APIs — from data layer to interface.'
+  },
+  {
+    icon: 'cloud',
+    title: 'Cloud Delivery',
+    detail: 'Google Cloud and Firebase for scalable apps, analytics pipelines, and workflow automation.'
+  },
+  {
+    icon: 'teaching',
+    title: 'Technical Leadership',
+    detail: 'Project-based CS instruction, mentoring, and turning ideas into shipped, real-world tools.'
   }
 ];
 
@@ -85,11 +129,11 @@ export const skillGroups: SkillGroup[] = [
     items: ['Cloud Run', 'Cloud SQL', 'BigQuery', 'Firebase', 'Cloud Storage', 'Cloud Build']
   },
   {
-    title: 'Data/AI',
+    title: 'Data / AI',
     items: ['Python', 'SQL', 'Pandas', 'NumPy', 'Prompt Engineering', 'Analytics Dashboards']
   },
   {
-    title: 'Languages/Tools',
+    title: 'Languages / Tools',
     items: ['C++', 'Java', 'GitHub', 'Docker', 'Swift', 'MS Office', 'Google Workspace', 'Canva']
   }
 ];
