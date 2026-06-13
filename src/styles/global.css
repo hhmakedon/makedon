@@ -478,7 +478,7 @@ img {
 }
 
 .hero-stats {
-  margin-top: clamp(2.5rem, 5vw, 3.5rem);
+  margin: clamp(2.5rem, 5vw, 3.5rem) 0 0;
   display: flex;
   flex-wrap: wrap;
   align-items: stretch;
@@ -486,6 +486,7 @@ img {
 .stat {
   display: flex;
   flex-direction: column;
+  align-items: flex-start;
   padding-right: clamp(1.25rem, 4vw, 2.25rem);
 }
 .stat + .stat {
@@ -493,6 +494,7 @@ img {
   border-left: 1px solid var(--line);
 }
 .stat-value {
+  margin: 0;
   display: flex;
   align-items: baseline;
   gap: 0.06em;
