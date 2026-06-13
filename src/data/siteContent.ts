@@ -35,11 +35,11 @@ export const marqueeItems: string[] = [
 
 export const projects: Project[] = [
   {
-    title: 'Havee Rewards',
+    title: 'Book Reviews App',
     description:
-      'A full-stack classroom rewards platform serving daily student engagement with role-based experiences, analytics tracking, and Firebase-backed workflows.',
-    tags: ['Web App', 'Firebase', 'GCP', 'Analytics'],
-    liveUrl: 'https://haveerewards.web.app/',
+      'A full-stack personal book review web app built for tracking books, writing reviews, and organizing reading activity in one place.',
+    tags: ['Full-Stack', 'Web App', 'Books', 'Reviews'],
+    liveUrl: 'https://hhmakedon.github.io/bookreviews/',
     featured: true
   },
   {
@@ -57,12 +57,11 @@ export const projects: Project[] = [
     liveUrl: 'https://hhmakedon.github.io/ShoppingListApp/'
   },
   {
-    title: 'Book Reviews App',
+    title: 'Havee Rewards',
     description:
-      'A full-stack personal book review web app built for tracking books, writing reviews, and organizing reading activity in one place.',
-    tags: ['Full-Stack', 'Web App', 'Books', 'Reviews'],
-    liveUrl: 'https://hhmakedon.github.io/bookreviews/',
-    featured: true
+      'A full-stack classroom rewards platform serving daily student engagement with role-based experiences, analytics tracking, and Firebase-backed workflows.',
+    tags: ['Web App', 'Firebase', 'GCP', 'Analytics'],
+    liveUrl: 'https://haveerewards.web.app/'
   },
   {
     title: 'Website Basics Demo',
