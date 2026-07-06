@@ -2,10 +2,16 @@ export type Project = {
   title: string;
   description: string;
   tags: string[];
-  liveUrl?: string;
+  liveUrl: string;
   secondaryUrl?: string;
   secondaryLabel?: string;
   featured?: boolean;
+};
+
+export type ExperienceItem = {
+  period: string;
+  title: string;
+  detail: string;
 };
 
 export type EducationItem = {
@@ -13,18 +19,6 @@ export type EducationItem = {
   degree: string;
   school: string;
   note?: string;
-};
-
-export type Licensure = {
-  title: string;
-  detail: string;
-  endorsements: string[];
-};
-
-export type ExperienceItem = {
-  period: string;
-  title: string;
-  detail: string;
 };
 
 export type SkillGroup = {

@@ -2,7 +2,6 @@ import type {
   EducationItem,
   ExperienceItem,
   Highlight,
-  Licensure,
   NavItem,
   Project,
   SkillGroup,
@@ -11,7 +10,7 @@ import type {
 
 export const navItems: NavItem[] = [
   { id: 'home', label: 'Home' },
-  { id: 'initiatives', label: 'Initiatives' },
+  { id: 'projects', label: 'Projects' },
   { id: 'about', label: 'About' },
   { id: 'education', label: 'Education' },
   { id: 'skills', label: 'Skills' },
@@ -20,104 +19,143 @@ export const navItems: NavItem[] = [
 ];
 
 export const heroStats: Stat[] = [
-  { value: '5', accent: '+', label: 'Years teaching CS & technology', countTo: 5 },
-  { value: "'26", label: 'M.Ed. Educational Leadership' },
-  { value: '4', accent: '+', label: 'Student programs led', countTo: 4 }
+  { value: '12', accent: '+', label: 'Apps & projects shipped', countTo: 12 },
+  { value: "'25", label: 'Google Cloud intern' },
+  { value: '4', accent: 'yrs', label: 'Teaching & building CS', countTo: 4 }
 ];
 
-export const heroRoles = ['Educator', 'Instructional Leader', 'Technologist'];
+export const heroRoles = ['Software Engineer', 'Cloud Practitioner', 'Educator'];
 
 export const marqueeItems: string[] = [
-  'Curriculum Design',
-  'AP CS Principles',
-  'CTE Standards',
-  'Instructional Coaching',
-  'Data-Driven Instruction',
-  'EdTech Integration',
-  'LEGO Robotics',
-  'STEM Programs',
-  'Digital Citizenship',
-  'Cybersecurity Education',
-  'Design Thinking',
-  'Program Evaluation',
-  'Family Engagement',
-  'Cloud Modernization'
+  'JavaScript',
+  'TypeScript',
+  'React',
+  'AngularJS',
+  'PHP',
+  'Python',
+  'SQL',
+  'Firebase',
+  'Cloud Run',
+  'BigQuery',
+  'Cloud SQL',
+  'Docker',
+  'C++',
+  'Java',
+  'REST APIs'
 ];
 
 export const projects: Project[] = [
   {
-    title: 'Grade-Level CS Curriculum',
+    title: 'Book Reviews App',
     description:
-      'Designed and delivered a computer science curriculum aligned to district, state CTE, and AP Computer Science Principles standards — a pathway spanning Scratch, physical computing with micro:bit, Python, web technologies, and introductory Swift, all anchored in the engineering design process.',
-    tags: ['Curriculum', 'Standards Alignment', 'CS Education'],
+      'A full-stack personal book review web app built for tracking books, writing reviews, and organizing reading activity in one place.',
+    tags: ['Full-Stack', 'Web App', 'Books', 'Reviews'],
+    liveUrl: 'https://hhmakedon.github.io/bookreviews/',
     featured: true
   },
   {
-    title: 'LEGO Robotics Program',
+    title: 'Auto Fury LLC',
     description:
-      'Built and coached a competition robotics program, guiding student teams through collaborative design, programming, testing, and competition-based problem solving.',
-    tags: ['Robotics', 'Coaching', 'Competition']
+      'Business website and customer-facing portal with lead-focused page architecture, dynamic modules, and practical marketing integrations.',
+    tags: ['Business Site', 'JavaScript', 'PHP', 'Marketing'],
+    liveUrl: 'https://www.autofuryllc.com/'
   },
   {
-    title: 'STEM Club & Yearbook',
+    title: 'Shopping List App',
     description:
-      'Co-led a STEM club introducing students to Swift Playgrounds, Scratch, and VEX Robotics, and directed the yearbook program — overseeing digital layout, content management, and publication workflows.',
-    tags: ['Clubs', 'Program Leadership', 'Publications']
+      'A full-stack Angular shopping workflow app with structured components, practical data handling, and an interface designed for everyday utility.',
+    tags: ['Full-Stack', 'Angular', 'JavaScript', 'Productivity'],
+    liveUrl: 'https://hhmakedon.github.io/ShoppingListApp/'
   },
   {
-    title: 'Teacher Rewards Store',
+    title: 'Havee Rewards',
     description:
-      'Led implementation of a full-stack classroom rewards platform supporting 20+ daily student users, with cloud infrastructure, monitoring, and reporting dashboards — built as a Google Cloud internship capstone.',
-    tags: ['Student Engagement', 'EdTech', 'Google Cloud'],
+      'A full-stack classroom rewards platform serving daily student engagement with role-based experiences, analytics tracking, and Firebase-backed workflows.',
+    tags: ['Web App', 'Firebase', 'GCP', 'Analytics'],
     liveUrl: 'https://haveerewards.web.app/'
   },
   {
-    title: 'Book Reviews Platform',
+    title: 'Website Basics Demo',
     description:
-      'Engineered a school book review platform to promote student reading engagement, with admin-only publishing enforced through Firebase Authentication and reviews organized to highlight strong recommendations.',
-    tags: ['Literacy', 'EdTech', 'Firebase'],
-    liveUrl: 'https://hhmakedon.github.io/bookreviews/'
+      'A classroom teaching demo that helps students understand what websites are, how pages are structured, and how content is organized online.',
+    tags: ['Education Demo', 'HTML/CSS', 'Teaching'],
+    liveUrl: 'https://hhmakedon.github.io/websitedemo/'
   },
   {
-    title: 'Public-Sector Cloud Modernization',
+    title: 'Phishing Awareness Demo',
     description:
-      'Contributed to education and public-sector cloud modernization work at Google — building prototype environments, evaluating architectures, and translating technical designs into stakeholder-facing recommendations.',
-    tags: ['Google Cloud', 'Public Sector', 'Documentation']
+      'A teaching-focused demo introducing phishing risk signals and practical habits for recognizing suspicious messages and links.',
+    tags: ['Education Demo', 'Cyber Safety', 'Teaching'],
+    liveUrl: 'https://hhmakedon.github.io/phishdemo/'
+  },
+  {
+    title: 'DOM Manipulation Demo',
+    description:
+      'A live demo site for practicing DOM manipulation from the browser console — selecting elements, changing content and styles, and seeing the page respond in real time.',
+    tags: ['Education Demo', 'JavaScript', 'DOM', 'Teaching'],
+    liveUrl: 'https://hhmakedon.github.io/DOM-Manipulation-Demo/'
+  },
+  {
+    title: 'WordGarden',
+    description:
+      'A word-guessing game for iOS — guess the phrase letter by letter before the flower wilts, with round tracking and win/loss feedback.',
+    tags: ['iOS App', 'Swift', 'Game'],
+    liveUrl: 'https://github.com/hhmakedon/WordGarden'
+  },
+  {
+    title: 'War Card Game',
+    description:
+      'The classic War card game as an iOS app — tap to deal, compare cards, and track both players’ scores round over round.',
+    tags: ['iOS App', 'Swift', 'Game'],
+    liveUrl: 'https://github.com/hhmakedon/War-Card-Game'
+  },
+  {
+    title: 'DungeonDice',
+    description:
+      'A tabletop companion app for iOS that rolls the full set of polyhedral dice (d4 through d100) with a clean, tap-friendly interface.',
+    tags: ['iOS App', 'Swift', 'Utility'],
+    liveUrl: 'https://github.com/hhmakedon/DungeonDice'
+  },
+  {
+    title: "What's For Dinner",
+    description:
+      'A random dinner selector for iOS — one tap serves up a meal suggestion for anyone who can never decide what to eat.',
+    tags: ['iOS App', 'Swift', 'Utility'],
+    liveUrl: 'https://github.com/hhmakedon/WhatsForDinner'
+  },
+  {
+    title: 'Predict 8-Ball',
+    description:
+      'A Magic 8-Ball app for iOS — ask a question, shake or tap, and receive your fortune with playful animations.',
+    tags: ['iOS App', 'Swift', 'Game'],
+    liveUrl: 'https://github.com/hhmakedon/Predict-8Ball'
   }
 ];
 
 export const highlights: Highlight[] = [
   {
-    icon: 'teaching',
-    title: 'Instructional Leadership',
-    detail:
-      'Standards-aligned curriculum design, project-based learning, and inclusive classroom practice across two districts.'
-  },
-  {
     icon: 'web',
-    title: 'Programs & Community',
-    detail:
-      'Robotics, STEM clubs, and publications — building programs that connect students, families, and real-world skills.'
+    title: 'Full-Stack Engineering',
+    detail: 'Maintainable builds with JavaScript, AngularJS, PHP, and REST APIs — from data layer to interface.'
   },
   {
     icon: 'cloud',
-    title: 'Data & Technology',
-    detail:
-      'Analytics, dashboards, and cloud tooling that turn school data into clear, actionable decisions.'
+    title: 'Cloud Delivery',
+    detail: 'Google Cloud and Firebase for scalable apps, analytics pipelines, and workflow automation.'
+  },
+  {
+    icon: 'teaching',
+    title: 'Technical Leadership',
+    detail: 'Project-based CS instruction, mentoring, and turning ideas into shipped, real-world tools.'
   }
 ];
 
 export const education: EducationItem[] = [
   {
-    period: 'Mar 2025 – Dec 2026',
+    period: '2025 – 2026',
     degree: 'Master of Educational Leadership',
     school: 'Aurora University',
     note: 'In progress — 3rd master’s'
-  },
-  {
-    period: '2021 – 2022',
-    degree: 'ESL & Bilingual Education Endorsement',
-    school: 'National Louis University'
   },
   {
     period: '2019 – 2021',
@@ -133,98 +171,45 @@ export const education: EducationItem[] = [
     period: '2014 – 2016',
     degree: 'Bachelor of Arts in History and Philosophy',
     school: 'Elmhurst University'
-  },
-  {
-    period: '2012 – 2014',
-    degree: 'Associate in Arts',
-    school: 'Oakton College',
-    note: 'High Honors · President’s Scholar'
   }
 ];
 
-export const licensure: Licensure = {
-  title: 'Illinois Professional Educator License (PEL)',
-  detail: 'Issued 2021 · Registered through 2026 · 12 ISBE endorsements',
-  endorsements: [
-    'Computer Science (5–12)',
-    'Technology Education (5–12)',
-    'Business, Marketing & Computer Ed (5–12)',
-    'Programming (5–12)',
-    'Computer Applications (5–12)',
-    'English as a Second Language (PreK–12)',
-    'Social Science — History (9–12)',
-    'Social Science — Geography (9–12)',
-    'Social Science — Economics (9–12)',
-    'Social Science — Political Science (9–12)',
-    'Social Science — Psychology (9–12)',
-    'Social Science (5–8)'
-  ]
-};
-
 export const experience: ExperienceItem[] = [
   {
-    period: 'Aug 2023 – Present',
-    title: 'Computer Science & Technology Teacher — Chicago Public Schools & CCSD 89',
-    detail:
-      'Design and deliver grade-level CS curriculum aligned to district, state CTE, and AP CS Principles standards; teach programming, physical computing, cybersecurity, and digital citizenship; lead LEGO Robotics and project-based learning anchored in the engineering design process.'
-  },
-  {
     period: 'Jun 2025 – Aug 2025',
-    title: 'Summer Intern, Google Cloud',
+    title: 'Google Cloud Summer Intern',
     detail:
-      'Selected for a competitive internship focused on public-sector and education cloud modernization — built and evaluated secure cloud architectures, developed prototype environments and documentation, and translated technical designs into stakeholder recommendations.'
+      'Collaborated with engineers and PMs on AI-first cloud prototypes, building proof-of-concept tools and reporting workflows with Cloud Run, BigQuery, and Firebase.'
   },
   {
-    period: 'Aug 2021 – Jun 2023',
-    title: 'Grade Center Teacher — Glenview District 34',
+    period: 'Aug 2021 – Present',
+    title: 'Computer Science & Technology Teacher',
     detail:
-      'Supported remote learning operations and instructional continuity through the pandemic, provided technology support to students and families, co-led the STEM club, and directed the yearbook program.'
+      'Built and deployed classroom web apps, integrated cloud tooling for analytics and automation, and taught programming, robotics, and applied product development.'
   },
   {
     period: 'Oct 2018 – Jan 2021',
-    title: 'Operations & Data Analyst — Yusen Logistics',
+    title: 'Operations & Data Analyst, Yusen Logistics',
     detail:
-      'Analyzed operational data with SQL and advanced Excel, built automated reporting systems and KPI dashboards, and delivered data-driven recommendations to management.'
+      'Automated reporting with SQL and Python, built internal tools and dashboards, and improved workflow efficiency through data-driven process modernization.'
   }
 ];
 
 export const skillGroups: SkillGroup[] = [
   {
-    title: 'Instruction',
-    items: [
-      'Curriculum Design',
-      'AP CS Principles',
-      'CTE Standards',
-      'Project-Based Learning',
-      'Engineering Design Process',
-      'Inclusive Practice'
-    ]
+    title: 'Web Dev',
+    items: ['HTML', 'CSS', 'JavaScript', 'AngularJS', 'PHP', 'REST APIs', 'JSON', 'AJAX']
   },
   {
-    title: 'Leadership & Programs',
-    items: [
-      'Program Development',
-      'Coaching & Mentoring',
-      'Family Engagement',
-      'Stakeholder Communication',
-      'Documentation',
-      'Club & Competition Leadership'
-    ]
+    title: 'Cloud',
+    items: ['Cloud Run', 'Cloud SQL', 'BigQuery', 'Firebase', 'Cloud Storage', 'Cloud Build']
   },
   {
-    title: 'Data & Assessment',
-    items: ['SQL', 'Advanced Excel', 'Dashboards', 'KPI Tracking', 'Program Evaluation', 'Reporting Automation']
+    title: 'Data / AI',
+    items: ['Python', 'SQL', 'Pandas', 'NumPy', 'Prompt Engineering', 'Analytics Dashboards']
   },
   {
-    title: 'Technology',
-    items: [
-      'Google Workspace',
-      'Google Cloud',
-      'Firebase',
-      'Python',
-      'Web Development',
-      'micro:bit / MakeCode',
-      'VEX & LEGO Robotics'
-    ]
+    title: 'Languages / Tools',
+    items: ['C++', 'Java', 'GitHub', 'Docker', 'Swift', 'MS Office', 'Google Workspace', 'Canva']
   }
 ];
