@@ -15,6 +15,12 @@ export type EducationItem = {
   note?: string;
 };
 
+export type Licensure = {
+  title: string;
+  detail: string;
+  endorsements: string[];
+};
+
 export type ExperienceItem = {
   period: string;
   title: string;

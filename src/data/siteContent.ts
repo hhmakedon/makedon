@@ -2,6 +2,7 @@ import type {
   EducationItem,
   ExperienceItem,
   Highlight,
+  Licensure,
   NavItem,
   Project,
   SkillGroup,
@@ -116,14 +117,12 @@ export const education: EducationItem[] = [
   {
     period: '2021 – 2022',
     degree: 'ESL & Bilingual Education Endorsement',
-    school: 'National Louis University',
-    note: '4.0 GPA'
+    school: 'National Louis University'
   },
   {
     period: '2019 – 2021',
     degree: 'Master of Secondary Education',
-    school: 'Northeastern Illinois University',
-    note: '4.0 GPA'
+    school: 'Northeastern Illinois University'
   },
   {
     period: '2016 – 2018',
@@ -142,6 +141,25 @@ export const education: EducationItem[] = [
     note: 'High Honors · President’s Scholar'
   }
 ];
+
+export const licensure: Licensure = {
+  title: 'Illinois Professional Educator License (PEL)',
+  detail: 'Issued 2021 · Registered through 2026 · 12 ISBE endorsements',
+  endorsements: [
+    'Computer Science (5–12)',
+    'Technology Education (5–12)',
+    'Business, Marketing & Computer Ed (5–12)',
+    'Programming (5–12)',
+    'Computer Applications (5–12)',
+    'English as a Second Language (PreK–12)',
+    'Social Science — History (9–12)',
+    'Social Science — Geography (9–12)',
+    'Social Science — Economics (9–12)',
+    'Social Science — Political Science (9–12)',
+    'Social Science — Psychology (9–12)',
+    'Social Science (5–8)'
+  ]
+};
 
 export const experience: ExperienceItem[] = [
   {
