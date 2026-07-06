@@ -10,10 +10,12 @@ export const navItems: NavItem[] = [
 ];
 
 export const heroStats: Stat[] = [
-  { value: '6', accent: '+', label: 'Production apps shipped' },
+  { value: '6', accent: '+', label: 'Production apps shipped', countTo: 6 },
   { value: "'25", label: 'Google Cloud intern' },
-  { value: '4', accent: 'yrs', label: 'Teaching & building CS' }
+  { value: '4', accent: 'yrs', label: 'Teaching & building CS', countTo: 4 }
 ];
+
+export const heroRoles = ['Software Engineer', 'Cloud Practitioner', 'Educator'];
 
 export const marqueeItems: string[] = [
   'JavaScript',

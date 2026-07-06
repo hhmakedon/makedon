@@ -28,6 +28,8 @@ export type Stat = {
   value: string;
   accent?: string;
   label: string;
+  /** When set, the value counts up from 0 to this number on load. */
+  countTo?: number;
 };
 
 export type Highlight = {

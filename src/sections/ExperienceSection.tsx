@@ -12,7 +12,7 @@ export function ExperienceSection() {
 
         <ol className="timeline">
           {experience.map((item) => (
-            <li className="timeline-item" key={item.title}>
+            <li className="timeline-item stagger-item" key={item.title}>
               <p className="timeline-period">{item.period}</p>
               <h3>{item.title}</h3>
               <p>{item.detail}</p>

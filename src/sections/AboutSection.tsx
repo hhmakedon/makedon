@@ -33,7 +33,7 @@ export function AboutSection() {
               {highlights.map((item) => {
                 const Icon = highlightIcons[item.icon];
                 return (
-                  <article key={item.title}>
+                  <article className="stagger-item" key={item.title}>
                     <span className="about-icon" aria-hidden="true">
                       <Icon />
                     </span>

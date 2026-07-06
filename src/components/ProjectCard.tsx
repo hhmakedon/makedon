@@ -16,7 +16,7 @@ export function ProjectCard({ project, index }: ProjectCardProps) {
 
   return (
     <article
-      className={`project-card ${project.featured ? 'is-featured' : ''}`}
+      className={`project-card stagger-item ${project.featured ? 'is-featured' : ''}`}
       onMouseMove={handleMouseMove}
     >
       <div className="project-top">

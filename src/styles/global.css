@@ -456,10 +456,20 @@ img {
   font-weight: 500;
   color: var(--text-soft);
   letter-spacing: -0.01em;
+  min-height: 1.7em;
 }
 .hero-roles .sep {
   color: var(--accent);
   margin: 0 0.55rem;
+}
+.typewriter-caret {
+  display: inline-block;
+  width: 2px;
+  height: 1.05em;
+  margin-left: 3px;
+  background: var(--accent);
+  vertical-align: text-bottom;
+  animation: caret-blink 1.05s step-end infinite;
 }
 
 .hero-lead {
@@ -529,6 +539,9 @@ img {
   max-width: 380px;
   width: 100%;
   justify-self: end;
+  transform: perspective(950px) rotateX(var(--rx, 0deg)) rotateY(var(--ry, 0deg));
+  transition: transform 0.18s ease-out;
+  will-change: transform;
 }
 .hero-card-photo {
   position: relative;
@@ -1145,6 +1158,26 @@ img {
   transform: none;
 }
 
+/* Staggered child reveals — children animate in sequence once the
+   parent section becomes visible. */
+.reveal .stagger-item {
+  opacity: 0;
+  transform: translateY(22px);
+  transition: opacity 0.65s var(--ease-out), transform 0.65s var(--ease-out);
+}
+.reveal-visible .stagger-item {
+  opacity: 1;
+  transform: none;
+}
+.reveal-visible .stagger-item:nth-child(1) { transition-delay: 0.08s; }
+.reveal-visible .stagger-item:nth-child(2) { transition-delay: 0.16s; }
+.reveal-visible .stagger-item:nth-child(3) { transition-delay: 0.24s; }
+.reveal-visible .stagger-item:nth-child(4) { transition-delay: 0.32s; }
+.reveal-visible .stagger-item:nth-child(5) { transition-delay: 0.4s; }
+.reveal-visible .stagger-item:nth-child(6) { transition-delay: 0.48s; }
+.reveal-visible .stagger-item:nth-child(7) { transition-delay: 0.56s; }
+.reveal-visible .stagger-item:nth-child(8) { transition-delay: 0.64s; }
+
 /* ============================================================
    Keyframes
    ============================================================ */
@@ -1160,6 +1193,15 @@ img {
 @keyframes scroll-x {
   to {
     transform: translateX(calc(-50% - var(--space-10) / 2));
+  }
+}
+@keyframes caret-blink {
+  0%,
+  100% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 0;
   }
 }
 
@@ -1236,7 +1278,8 @@ input:focus-visible {
     animation-iteration-count: 1 !important;
     transition-duration: 0.001ms !important;
   }
-  .reveal {
+  .reveal,
+  .reveal .stagger-item {
     opacity: 1;
     transform: none;
   }

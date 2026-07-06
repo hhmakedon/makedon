@@ -15,7 +15,7 @@ export function SkillsSection() {
 
         <div className="skills-grid">
           {skillGroups.map((group, index) => (
-            <article key={group.title}>
+            <article className="stagger-item" key={group.title}>
               <h3>
                 <span className="num">{String(index + 1).padStart(2, '0')}</span>
                 {group.title}
