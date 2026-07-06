@@ -87,6 +87,48 @@ export const projects: Project[] = [
       'A teaching-focused demo introducing phishing risk signals and practical habits for recognizing suspicious messages and links.',
     tags: ['Education Demo', 'Cyber Safety', 'Teaching'],
     liveUrl: 'https://hhmakedon.github.io/phishdemo/'
+  },
+  {
+    title: 'DOM Manipulation Demo',
+    description:
+      'A live demo site for practicing DOM manipulation from the browser console — selecting elements, changing content and styles, and seeing the page respond in real time.',
+    tags: ['Education Demo', 'JavaScript', 'DOM', 'Teaching'],
+    liveUrl: 'https://hhmakedon.github.io/DOM-Manipulation-Demo/'
+  },
+  {
+    title: 'WordGarden',
+    description:
+      'A word-guessing game for iOS — guess the phrase letter by letter before the flower wilts, with round tracking and win/loss feedback.',
+    tags: ['iOS App', 'Swift', 'Game'],
+    liveUrl: 'https://github.com/hhmakedon/WordGarden'
+  },
+  {
+    title: 'War Card Game',
+    description:
+      'The classic War card game as an iOS app — tap to deal, compare cards, and track both players’ scores round over round.',
+    tags: ['iOS App', 'Swift', 'Game'],
+    liveUrl: 'https://github.com/hhmakedon/War-Card-Game'
+  },
+  {
+    title: 'DungeonDice',
+    description:
+      'A tabletop companion app for iOS that rolls the full set of polyhedral dice (d4 through d100) with a clean, tap-friendly interface.',
+    tags: ['iOS App', 'Swift', 'Utility'],
+    liveUrl: 'https://github.com/hhmakedon/DungeonDice'
+  },
+  {
+    title: "What's For Dinner",
+    description:
+      'A random dinner selector for iOS — one tap serves up a meal suggestion for anyone who can never decide what to eat.',
+    tags: ['iOS App', 'Swift', 'Utility'],
+    liveUrl: 'https://github.com/hhmakedon/WhatsForDinner'
+  },
+  {
+    title: 'Predict 8-Ball',
+    description:
+      'A Magic 8-Ball app for iOS — ask a question, shake or tap, and receive your fortune with playful animations.',
+    tags: ['iOS App', 'Swift', 'Game'],
+    liveUrl: 'https://github.com/hhmakedon/Predict-8Ball'
   }
 ];
 
