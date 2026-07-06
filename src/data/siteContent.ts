@@ -19,7 +19,7 @@ export const navItems: NavItem[] = [
 ];
 
 export const heroStats: Stat[] = [
-  { value: '6', accent: '+', label: 'Production apps shipped', countTo: 6 },
+  { value: '12', accent: '+', label: 'Apps & projects shipped', countTo: 12 },
   { value: "'25", label: 'Google Cloud intern' },
   { value: '4', accent: 'yrs', label: 'Teaching & building CS', countTo: 4 }
 ];
