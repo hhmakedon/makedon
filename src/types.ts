@@ -2,10 +2,17 @@ export type Project = {
   title: string;
   description: string;
   tags: string[];
-  liveUrl: string;
+  liveUrl?: string;
   secondaryUrl?: string;
   secondaryLabel?: string;
   featured?: boolean;
+};
+
+export type EducationItem = {
+  period: string;
+  degree: string;
+  school: string;
+  note?: string;
 };
 
 export type ExperienceItem = {

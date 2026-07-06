@@ -7,6 +7,7 @@ import { useScrollProgress } from './hooks/useScrollProgress';
 import { useTheme } from './hooks/useTheme';
 import { AboutSection } from './sections/AboutSection';
 import { ContactSection } from './sections/ContactSection';
+import { EducationSection } from './sections/EducationSection';
 import { ExperienceSection } from './sections/ExperienceSection';
 import { FooterSection } from './sections/FooterSection';
 import { HeroSection } from './sections/HeroSection';
@@ -41,6 +42,7 @@ function App() {
         <Marquee items={marqueeItems} />
         <ProjectsSection />
         <AboutSection />
+        <EducationSection />
         <SkillsSection />
         <ExperienceSection />
         <ContactSection />

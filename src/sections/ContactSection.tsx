@@ -2,7 +2,7 @@ import { useEffect, useState } from 'react';
 import { RevealSection } from '../components/RevealSection';
 import { ArrowRight, Copy, Github, Linkedin, Mail } from '../components/icons';
 
-const emailAddress = 'haveemakedon1@gmail.com';
+const emailAddress = 'haveem@yahoo.com';
 
 export function ContactSection() {
   const [toastMessage, setToastMessage] = useState('');
@@ -34,14 +34,14 @@ export function ContactSection() {
     <RevealSection id="contact" className="section-muted contact-section">
       <div className="container">
         <p className="eyebrow" style={{ justifyContent: 'center' }}>
-          05 — Get in touch
+          06 — Get in touch
         </p>
         <h2 className="contact-headline">
-          Let's build something <span className="text-grad">great</span>.
+          Let's build great <span className="text-grad">schools</span>.
         </h2>
         <p className="contact-sub">
-          Always happy to talk through ideas, projects, or collaborations. The fastest way to reach
-          me is email.
+          Always glad to connect about instruction, technology programs, and school leadership. The
+          fastest way to reach me is email.
         </p>
 
         <div className="contact-actions">

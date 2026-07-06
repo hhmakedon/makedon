@@ -27,14 +27,14 @@ export function ProjectsSection() {
   }, [activeTag, searchTerm]);
 
   return (
-    <RevealSection id="projects" className="section-muted">
+    <RevealSection id="initiatives" className="section-muted">
       <div className="container">
         <div className="section-head">
-          <p className="eyebrow">01 — Selected Work</p>
-          <h2>Projects</h2>
+          <p className="eyebrow">01 — Leadership in Practice</p>
+          <h2>Initiatives &amp; Programs</h2>
           <p className="section-sub">
-            A mix of production applications and teaching tools — built end to end, deployed, and
-            used in the real world.
+            Curriculum, student programs, and school technology — designed, led, and delivered from
+            idea to daily use.
           </p>
         </div>
 
@@ -45,7 +45,7 @@ export function ProjectsSection() {
             <input
               id="project-search"
               type="search"
-              placeholder="Search projects or tags…"
+              placeholder="Search initiatives or tags…"
               value={searchTerm}
               onChange={(event) => setSearchTerm(event.target.value)}
             />
@@ -73,7 +73,7 @@ export function ProjectsSection() {
             ))}
           </div>
         ) : (
-          <p className="project-empty">No projects match that filter — try another tag.</p>
+          <p className="project-empty">No initiatives match that filter — try another tag.</p>
         )}
       </div>
     </RevealSection>
