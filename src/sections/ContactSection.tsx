@@ -34,7 +34,7 @@ export function ContactSection() {
     <RevealSection id="contact" className="section-muted contact-section">
       <div className="container">
         <p className="eyebrow" style={{ justifyContent: 'center' }}>
-          05 — Get in touch
+          06 — Get in touch
         </p>
         <h2 className="contact-headline">
           Let's build something <span className="text-grad">great</span>.

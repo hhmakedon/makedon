@@ -6,7 +6,7 @@ export function ExperienceSection() {
     <RevealSection id="experience">
       <div className="container">
         <div className="section-head">
-          <p className="eyebrow">04 — Career</p>
+          <p className="eyebrow">05 — Career</p>
           <h2>Experience</h2>
         </div>
 

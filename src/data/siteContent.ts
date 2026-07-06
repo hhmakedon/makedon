@@ -1,9 +1,18 @@
-import type { ExperienceItem, Highlight, NavItem, Project, SkillGroup, Stat } from '../types';
+import type {
+  EducationItem,
+  ExperienceItem,
+  Highlight,
+  NavItem,
+  Project,
+  SkillGroup,
+  Stat
+} from '../types';
 
 export const navItems: NavItem[] = [
   { id: 'home', label: 'Home' },
   { id: 'projects', label: 'Projects' },
   { id: 'about', label: 'About' },
+  { id: 'education', label: 'Education' },
   { id: 'skills', label: 'Skills' },
   { id: 'experience', label: 'Experience' },
   { id: 'contact', label: 'Contact' }
@@ -96,6 +105,30 @@ export const highlights: Highlight[] = [
     icon: 'teaching',
     title: 'Technical Leadership',
     detail: 'Project-based CS instruction, mentoring, and turning ideas into shipped, real-world tools.'
+  }
+];
+
+export const education: EducationItem[] = [
+  {
+    period: '2025 – 2026',
+    degree: 'Master of Educational Leadership',
+    school: 'Aurora University',
+    note: 'In progress — 3rd master’s'
+  },
+  {
+    period: '2019 – 2021',
+    degree: 'Master of Secondary Education',
+    school: 'Northeastern Illinois University'
+  },
+  {
+    period: '2016 – 2018',
+    degree: 'Master of Logic and the Philosophy of Science',
+    school: 'Ludwig Maximilian University of Munich'
+  },
+  {
+    period: '2014 – 2016',
+    degree: 'Bachelor of Arts in History and Philosophy',
+    school: 'Elmhurst University'
   }
 ];
 

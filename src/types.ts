@@ -14,6 +14,13 @@ export type ExperienceItem = {
   detail: string;
 };
 
+export type EducationItem = {
+  period: string;
+  degree: string;
+  school: string;
+  note?: string;
+};
+
 export type SkillGroup = {
   title: string;
   items: string[];

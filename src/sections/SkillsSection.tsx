@@ -6,7 +6,7 @@ export function SkillsSection() {
     <RevealSection id="skills" className="section-muted">
       <div className="container">
         <div className="section-head">
-          <p className="eyebrow">03 — Capabilities</p>
+          <p className="eyebrow">04 — Capabilities</p>
           <h2>Skills &amp; Tools</h2>
           <p className="section-sub">
             The stack I reach for across full-stack delivery, cloud, and data work.
