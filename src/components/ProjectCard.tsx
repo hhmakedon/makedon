@@ -35,18 +35,20 @@ export function ProjectCard({ project, index }: ProjectCardProps) {
         ))}
       </ul>
 
-      <div className="project-footer">
-        <a
-          className="project-link"
-          href={project.liveUrl}
-          target="_blank"
-          rel="noreferrer"
-          aria-label={`Open ${project.title} (opens in a new tab)`}
-        >
-          View project
-          <ArrowUpRight />
-        </a>
-      </div>
+      {project.liveUrl ? (
+        <div className="project-footer">
+          <a
+            className="project-link"
+            href={project.liveUrl}
+            target="_blank"
+            rel="noreferrer"
+            aria-label={`Open ${project.title} (opens in a new tab)`}
+          >
+            View project
+            <ArrowUpRight />
+          </a>
+        </div>
+      ) : null}
     </article>
   );
 }

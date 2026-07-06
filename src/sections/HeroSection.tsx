@@ -2,7 +2,7 @@ import type { MouseEvent } from 'react';
 import haveePhoto from '../assets/havee-photo.jpg';
 import { heroRoles, heroStats } from '../data/siteContent';
 import type { Stat } from '../types';
-import { ArrowRight, Github, MapPin } from '../components/icons';
+import { ArrowRight, Linkedin, MapPin } from '../components/icons';
 import { Typewriter } from '../components/Typewriter';
 import { useCountUp } from '../hooks/useCountUp';
 
@@ -52,14 +52,14 @@ export function HeroSection() {
           </p>
 
           <p className="hero-lead">
-            I build practical web products that connect clean, fast user experiences with
-            cloud-backed data and automation — from classroom platforms to production business
-            tools.
+            I help schools connect strong instruction with practical technology — designing
+            standards-aligned curriculum, leading student programs, and using data to make learning
+            communities work better for every student.
           </p>
 
           <div className="hero-actions">
-            <a className="btn btn-primary" href="#projects">
-              View Projects
+            <a className="btn btn-primary" href="#initiatives">
+              View Initiatives
               <ArrowRight className="arrow" />
             </a>
             <a className="btn btn-secondary" href="#contact">
@@ -67,12 +67,12 @@ export function HeroSection() {
             </a>
             <a
               className="btn btn-ghost"
-              href="https://github.com/hhmakedon"
+              href="https://www.linkedin.com/in/haveemakedon/"
               target="_blank"
               rel="noreferrer"
             >
-              <Github />
-              GitHub
+              <Linkedin />
+              LinkedIn
             </a>
           </div>
 
@@ -97,9 +97,9 @@ export function HeroSection() {
             </div>
           </div>
           <div className="hero-card-meta">
-            <span>Google Cloud '25</span>
+            <span>M.Ed. Leadership '26</span>
             <span>CS Educator</span>
-            <span>Full-Stack</span>
+            <span>Google Cloud '25</span>
           </div>
         </aside>
       </div>

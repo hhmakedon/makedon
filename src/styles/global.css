@@ -975,6 +975,28 @@ img {
 }
 
 /* ============================================================
+   Licensure
+   ============================================================ */
+.licensure-card {
+  margin-top: var(--space-10);
+  padding: var(--space-6);
+  border-radius: var(--radius-md);
+  border: 1px solid var(--line);
+  background: var(--surface);
+  box-shadow: var(--shadow-sm);
+}
+.licensure-card h3 {
+  font-size: 1.1rem;
+  letter-spacing: -0.02em;
+}
+.licensure-detail {
+  margin: var(--space-2) 0 var(--space-4);
+  font-family: var(--font-mono);
+  font-size: 0.8rem;
+  color: var(--text-soft);
+}
+
+/* ============================================================
    Experience timeline
    ============================================================ */
 .timeline {
