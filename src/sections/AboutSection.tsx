@@ -13,23 +13,20 @@ export function AboutSection() {
 
         <div className="about-layout">
           <p className="about-lead">
-            Strong instruction, backed by <span className="text-grad">systems that work</span>.
+            Engineering and education, working <span className="text-grad">together</span>.
           </p>
 
           <div className="about-body">
             <p>
-              I'm a Chicago-based computer science educator pursuing a Master of Educational
-              Leadership at Aurora University — my third master's degree, alongside an ESL &amp;
-              Bilingual Education endorsement. Across two districts I've designed standards-aligned
-              curriculum, coached robotics teams, led STEM and publication programs, and supported
-              students and families through remote learning — always grounding instruction in the
-              engineering design process and inclusive, project-based practice.
+              I'm a Chicago-based developer and educator who combines web engineering, cloud
+              infrastructure, and practical automation to build systems people actually use. I teach
+              a project-based curriculum across programming, robotics, multimedia production, and 3D
+              printing while shipping production websites and classroom platforms.
             </p>
             <p>
-              My path also runs through industry: data analysis at Yusen Logistics and a Google
-              Cloud internship focused on public-sector modernization. That background shapes how I
-              approach school leadership — with documentation rigor, data-driven decision making,
-              and technology that serves teaching rather than distracting from it.
+              Most recently I interned on Google Cloud, prototyping AI-first tools and reporting
+              workflows alongside engineers and product managers. I care about clean architecture,
+              fast iteration, and turning rough ideas into things that ship.
             </p>
 
             <div className="about-highlights">

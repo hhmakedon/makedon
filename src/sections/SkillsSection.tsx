@@ -9,7 +9,7 @@ export function SkillsSection() {
           <p className="eyebrow">04 — Capabilities</p>
           <h2>Skills &amp; Tools</h2>
           <p className="section-sub">
-            What I bring to instruction, program leadership, and school operations.
+            The stack I reach for across full-stack delivery, cloud, and data work.
           </p>
         </div>
 

@@ -1,5 +1,5 @@
 import { RevealSection } from '../components/RevealSection';
-import { education, licensure } from '../data/siteContent';
+import { education } from '../data/siteContent';
 
 export function EducationSection() {
   return (
@@ -7,7 +7,7 @@ export function EducationSection() {
       <div className="container">
         <div className="section-head">
           <p className="eyebrow">03 — Credentials</p>
-          <h2>Education &amp; Licensure</h2>
+          <h2>Education</h2>
         </div>
 
         <ol className="timeline">
@@ -22,16 +22,6 @@ export function EducationSection() {
             </li>
           ))}
         </ol>
-
-        <article className="licensure-card">
-          <h3>{licensure.title}</h3>
-          <p className="licensure-detail">{licensure.detail}</p>
-          <ul className="badge-list" aria-label="License endorsements">
-            {licensure.endorsements.map((item) => (
-              <li key={item}>{item}</li>
-            ))}
-          </ul>
-        </article>
       </div>
     </RevealSection>
   );
