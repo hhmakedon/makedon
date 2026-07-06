@@ -111,12 +111,19 @@ export const education: EducationItem[] = [
     period: 'Mar 2025 – Dec 2026',
     degree: 'Master of Educational Leadership',
     school: 'Aurora University',
-    note: 'In progress'
+    note: 'In progress — 3rd master’s'
+  },
+  {
+    period: '2021 – 2022',
+    degree: 'ESL & Bilingual Education Endorsement',
+    school: 'National Louis University',
+    note: '4.0 GPA'
   },
   {
     period: '2019 – 2021',
     degree: 'Master of Secondary Education',
-    school: 'Northeastern Illinois University'
+    school: 'Northeastern Illinois University',
+    note: '4.0 GPA'
   },
   {
     period: '2016 – 2018',
@@ -127,6 +134,12 @@ export const education: EducationItem[] = [
     period: '2014 – 2016',
     degree: 'Bachelor of Arts in History and Philosophy',
     school: 'Elmhurst University'
+  },
+  {
+    period: '2012 – 2014',
+    degree: 'Associate in Arts',
+    school: 'Oakton College',
+    note: 'High Honors · President’s Scholar'
   }
 ];
 

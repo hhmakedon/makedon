@@ -19,7 +19,8 @@ export function AboutSection() {
           <div className="about-body">
             <p>
               I'm a Chicago-based computer science educator pursuing a Master of Educational
-              Leadership at Aurora University. Across two districts I've designed standards-aligned
+              Leadership at Aurora University — my third master's degree, alongside an ESL &amp;
+              Bilingual Education endorsement. Across two districts I've designed standards-aligned
               curriculum, coached robotics teams, led STEM and publication programs, and supported
               students and families through remote learning — always grounding instruction in the
               engineering design process and inclusive, project-based practice.
