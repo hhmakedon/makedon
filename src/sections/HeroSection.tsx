@@ -53,8 +53,8 @@ export function HeroSection() {
 
           <p className="hero-lead">
             I build practical web products that connect clean, fast user experiences with
-            cloud-backed data and automation — from classroom platforms to production business
-            tools.
+            cloud-backed data and automation — from school-wide Firebase systems to production
+            business tools.
           </p>
 
           <div className="hero-actions">
@@ -98,7 +98,7 @@ export function HeroSection() {
           </div>
           <div className="hero-card-meta">
             <span>Google Cloud '25</span>
-            <span>CS Educator</span>
+            <span>5 Years Teaching</span>
             <span>Full-Stack</span>
           </div>
         </aside>

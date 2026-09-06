@@ -19,14 +19,16 @@ export function AboutSection() {
           <div className="about-body">
             <p>
               I'm a Chicago-based developer and educator who combines web engineering, cloud
-              infrastructure, and practical automation to build systems people actually use. I teach
-              a project-based curriculum across programming, robotics, multimedia production, and 3D
-              printing while shipping production websites and classroom platforms.
+              infrastructure, and practical automation to build systems people actually use. Across
+              five years of teaching, I have led project-based learning in programming, robotics,
+              multimedia production, and 3D printing while shipping production websites and
+              classroom platforms.
             </p>
             <p>
-              Most recently I interned on Google Cloud, prototyping AI-first tools and reporting
-              workflows alongside engineers and product managers. I care about clean architecture,
-              fast iteration, and turning rough ideas into things that ship.
+              Most recently, I built a Firebase bathroom-pass system used across an entire school,
+              with synchronized student timers, live teacher visibility, automated timeout logging,
+              and multi-teacher support. I care about clean architecture, fast iteration, and turning
+              everyday problems into dependable tools.
             </p>
 
             <div className="about-highlights">

@@ -19,9 +19,9 @@ export const navItems: NavItem[] = [
 ];
 
 export const heroStats: Stat[] = [
-  { value: '12', accent: '+', label: 'Apps & projects shipped', countTo: 12 },
+  { value: '13', accent: '+', label: 'Apps & projects shipped', countTo: 13 },
   { value: "'25", label: 'Google Cloud intern' },
-  { value: '4', accent: 'yrs', label: 'Teaching & building CS', countTo: 4 }
+  { value: '5', accent: 'yrs', label: 'Teaching & building CS', countTo: 5 }
 ];
 
 export const heroRoles = ['Software Engineer', 'Cloud Practitioner', 'Educator'];
@@ -46,12 +46,19 @@ export const marqueeItems: string[] = [
 
 export const projects: Project[] = [
   {
+    title: 'School-Wide Bathroom Pass',
+    description:
+      'A full-stack Firebase app used across an entire school to track students who are out of the room. It pairs student-side timers with a live teacher board that syncs across devices, automatically closes passes after 20 minutes, and distinguishes timeouts from returns and manual removals. A multi-teacher version supports building-wide use from the same codebase.',
+    tags: ['Featured', 'Full-Stack', 'Firebase', 'Real-Time', 'School Tool'],
+    liveUrl: 'https://bathroom-pass-timer.web.app/',
+    featured: true
+  },
+  {
     title: 'Book Reviews App',
     description:
       'A full-stack personal book review web app built for tracking books, writing reviews, and organizing reading activity in one place.',
     tags: ['Full-Stack', 'Web App', 'Books', 'Reviews'],
-    liveUrl: 'https://hhmakedon.github.io/bookreviews/',
-    featured: true
+    liveUrl: 'https://hhmakedon.github.io/bookreviews/'
   },
   {
     title: 'Auto Fury LLC',
@@ -146,7 +153,7 @@ export const highlights: Highlight[] = [
   {
     icon: 'teaching',
     title: 'Technical Leadership',
-    detail: 'Project-based CS instruction, mentoring, and turning ideas into shipped, real-world tools.'
+    detail: 'Five years of project-based CS instruction, mentoring, and turning school needs into shipped, real-world tools.'
   }
 ];
 
