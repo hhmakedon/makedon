@@ -85,10 +85,11 @@ export function SchoolHero() {
               </span>
             </div>
           </div>
-          <ul className="hero-card-meta" aria-label="Degrees">
+          <ul className="hero-card-meta hero-card-degrees" aria-label="Degrees">
             {degrees.map((item) => (
               <li key={item.degree} title={`${item.degree}, ${item.school}`}>
-                {item.short}
+                <span className="degree-abbr">{item.abbr}</span>
+                <span className="degree-field">{item.field}</span>
               </li>
             ))}
           </ul>

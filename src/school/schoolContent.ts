@@ -17,8 +17,9 @@ export type Degree = {
   period: string;
   degree: string;
   school: string;
-  /** Compact label for the hero profile card. */
-  short: string;
+  /** Compact labels for the hero profile card. */
+  abbr: string;
+  field: string;
 };
 
 export const schoolNavItems: NavItem[] = [
@@ -200,25 +201,29 @@ export const degrees: Degree[] = [
     period: '2025 – 2026',
     degree: 'Master of Educational Leadership',
     school: 'Aurora University',
-    short: 'M.E.L. · Educational Leadership'
+    abbr: 'M.E.L.',
+    field: 'Educational Leadership'
   },
   {
     period: '2019 – 2021',
     degree: 'Master of Arts in Teaching: Secondary Education',
     school: 'Northeastern Illinois University',
-    short: 'M.A.T. · Secondary Education'
+    abbr: 'M.A.T.',
+    field: 'Secondary Education'
   },
   {
     period: '2016 – 2018',
     degree: 'Master of Arts in Logic and Philosophy',
     school: 'Ludwig Maximilian University of Munich',
-    short: 'M.A. · Logic & Philosophy'
+    abbr: 'M.A.',
+    field: 'Logic & Philosophy'
   },
   {
     period: '2014 – 2016',
     degree: 'Bachelor of Arts in History and Philosophy',
     school: 'Elmhurst University',
-    short: 'B.A. · History & Philosophy'
+    abbr: 'B.A.',
+    field: 'History & Philosophy'
   }
 ];
 

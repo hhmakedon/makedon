@@ -2,6 +2,39 @@
    global.css; this file only adds the layouts that page needs. */
 
 /* ============================================================
+   Hero profile card — degrees as a 2x2 grid of tiles
+   ============================================================ */
+.hero-card-degrees {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: var(--space-2);
+}
+.hero-card-degrees li {
+  display: flex;
+  flex-direction: column;
+  gap: 2px;
+  min-width: 0;
+  padding: 0.5rem 0.7rem;
+  border-radius: var(--radius-sm);
+}
+/* The tile itself carries the chip styling; reset the inner spans so the
+   shared `.hero-card-meta span` chip rule doesn't apply to them. */
+.hero-card-degrees li span {
+  padding: 0;
+  border: 0;
+  border-radius: 0;
+  background: none;
+}
+.hero-card-degrees .degree-abbr {
+  font-weight: 600;
+  color: var(--text);
+}
+.hero-card-degrees .degree-field {
+  font-size: 0.68rem;
+  line-height: 1.35;
+}
+
+/* ============================================================
    Internship
    ============================================================ */
 .intern-meta {
