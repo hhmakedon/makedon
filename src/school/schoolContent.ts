@@ -200,13 +200,13 @@ export const degrees: Degree[] = [
     period: '2025 – 2026',
     degree: 'Master of Educational Leadership',
     school: 'Aurora University',
-    short: 'Master’s · Educational Leadership'
+    short: 'M.E.L. · Educational Leadership'
   },
   {
     period: '2019 – 2021',
     degree: 'Master of Arts in Teaching: Secondary Education',
     school: 'Northeastern Illinois University',
-    short: 'MAT · Secondary Education'
+    short: 'M.A.T. · Secondary Education'
   },
   {
     period: '2016 – 2018',
