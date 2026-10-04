@@ -1,0 +1,188 @@
+/* Styles specific to /school.html. Shared tokens and components come from
+   global.css; this file only adds the layouts that page needs. */
+
+/* ============================================================
+   Internship
+   ============================================================ */
+.intern-meta {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: flex-end;
+  justify-content: space-between;
+  gap: var(--space-3) var(--space-6);
+  padding-bottom: var(--space-6);
+  margin-bottom: var(--space-8);
+  border-bottom: 1px solid var(--line);
+}
+.intern-meta h3 {
+  font-size: clamp(1.2rem, 2.6vw, 1.5rem);
+  letter-spacing: -0.02em;
+}
+.intern-meta p {
+  margin-top: var(--space-2);
+  color: var(--text-soft);
+}
+.intern-meta .intern-meta-when {
+  margin-top: 0;
+  font-family: var(--font-mono);
+  font-size: 0.82rem;
+  color: var(--accent);
+}
+
+.intern-grid {
+  display: grid;
+  gap: var(--space-5);
+  grid-template-columns: 1fr;
+}
+.intern-card {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-3);
+  padding: clamp(1.4rem, 3vw, 1.9rem);
+  border-radius: var(--radius-lg);
+  border: 1px solid var(--line);
+  background: var(--surface);
+  box-shadow: var(--shadow-sm);
+  transition: transform 0.3s var(--ease-out), border-color 0.3s var(--ease-out),
+    box-shadow 0.3s var(--ease-out);
+}
+.intern-card:hover {
+  transform: translateY(-3px);
+  border-color: var(--line-strong);
+  box-shadow: var(--shadow-md);
+}
+.intern-num {
+  font-family: var(--font-mono);
+  font-size: 0.78rem;
+  color: var(--accent);
+}
+.intern-card h3 {
+  font-size: 1.15rem;
+  letter-spacing: -0.02em;
+}
+.intern-card p {
+  color: var(--text-soft);
+  font-size: 0.95rem;
+  line-height: 1.65;
+}
+
+/* ============================================================
+   Experience bullets
+   ============================================================ */
+.timeline-item .timeline-org {
+  margin: calc(-1 * var(--space-2)) 0 var(--space-3);
+  font-weight: 600;
+  color: var(--text);
+}
+.timeline-bullets {
+  display: grid;
+  gap: var(--space-2);
+  max-width: 72ch;
+}
+.timeline-bullets li {
+  position: relative;
+  padding-left: var(--space-5);
+  color: var(--text-soft);
+  line-height: 1.6;
+}
+.timeline-bullets li::before {
+  content: '';
+  position: absolute;
+  left: 2px;
+  top: 0.68em;
+  width: 6px;
+  height: 6px;
+  border-radius: 50%;
+  background: var(--accent);
+  opacity: 0.7;
+}
+
+/* ============================================================
+   Credentials
+   ============================================================ */
+.credentials-layout {
+  display: grid;
+  gap: var(--space-6);
+  align-items: start;
+}
+.cert-card {
+  position: relative;
+  padding: clamp(1.6rem, 3vw, 2.2rem);
+  border-radius: var(--radius-lg);
+  border: 1px solid var(--line-strong);
+  background: var(--surface);
+  box-shadow: var(--shadow-md);
+  overflow: hidden;
+}
+.cert-card::before {
+  content: '';
+  position: absolute;
+  inset: 0 0 auto 0;
+  height: 4px;
+  background: var(--grad);
+}
+.cert-issuer {
+  font-family: var(--font-mono);
+  font-size: 0.78rem;
+  color: var(--accent);
+  margin-bottom: var(--space-3);
+}
+.cert-card h3 {
+  font-size: clamp(1.25rem, 2.6vw, 1.55rem);
+  letter-spacing: -0.025em;
+  line-height: 1.2;
+}
+.cert-issued {
+  margin-top: var(--space-4);
+  color: var(--text-soft);
+}
+
+.degree-list {
+  display: grid;
+  gap: var(--space-4);
+}
+.degree-item {
+  padding: var(--space-5) var(--space-6);
+  border-radius: var(--radius-md);
+  border: 1px solid var(--line);
+  background: var(--surface);
+  box-shadow: var(--shadow-sm);
+}
+.degree-item h3 {
+  font-size: 1.05rem;
+  letter-spacing: -0.02em;
+  line-height: 1.3;
+  margin-bottom: var(--space-1);
+}
+.degree-item p:last-child {
+  color: var(--text-soft);
+}
+
+/* ============================================================
+   Responsive
+   ============================================================ */
+@media (min-width: 720px) {
+  .intern-grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+  /* Five cards: let the last one span so the grid ends evenly. */
+  .intern-card:last-child:nth-child(odd) {
+    grid-column: 1 / -1;
+  }
+  .degree-list {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+}
+
+@media (min-width: 940px) {
+  .credentials-layout {
+    grid-template-columns: minmax(0, 0.8fr) minmax(0, 1.2fr);
+  }
+  .degree-list {
+    grid-template-columns: 1fr;
+  }
+  .cert-card {
+    position: sticky;
+    top: 110px;
+  }
+}

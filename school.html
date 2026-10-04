@@ -1,0 +1,54 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Havee Makedon — Educational Leadership</title>
+    <meta
+      name="description"
+      content="Havee Makedon — educator and educational leader. Leadership internship, school improvement projects, experience, and credentials."
+    />
+    <!-- Shared by direct link; kept out of search results. -->
+    <meta name="robots" content="noindex" />
+
+    <meta property="og:title" content="Havee Makedon — Educational Leadership" />
+    <meta
+      property="og:description"
+      content="Leadership internship, school improvement projects, experience, and credentials."
+    />
+    <meta property="og:type" content="profile" />
+    <meta property="og:url" content="https://haveemakedon.com/school.html" />
+    <meta name="theme-color" content="#0b1f33" media="(prefers-color-scheme: dark)" />
+    <meta name="theme-color" content="#eaf1f8" media="(prefers-color-scheme: light)" />
+
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&family=JetBrains+Mono:wght@400;500;600&display=swap"
+      rel="stylesheet"
+    />
+
+    <script>
+      // Apply the saved theme before paint to avoid a flash.
+      (function () {
+        try {
+          var stored = localStorage.getItem('site-theme');
+          var theme =
+            stored === 'light' || stored === 'dark'
+              ? stored
+              : window.matchMedia('(prefers-color-scheme: dark)').matches
+              ? 'dark'
+              : 'light';
+          document.documentElement.setAttribute('data-theme', theme);
+        } catch (e) {}
+      })();
+    </script>
+  </head>
+  <body>
+    <div id="root"></div>
+    <noscript>This site requires JavaScript enabled to run.</noscript>
+    <script type="module" src="/src/school/main.tsx"></script>
+  </body>
+</html>

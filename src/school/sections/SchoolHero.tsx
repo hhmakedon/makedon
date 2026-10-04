@@ -1,11 +1,11 @@
 import type { MouseEvent } from 'react';
-import haveePhoto from '../assets/havee-photo.jpg';
-import { heroRoles, heroStats } from '../data/siteContent';
-import { ArrowRight, Github, MapPin } from '../components/icons';
-import { StatValue } from '../components/StatValue';
-import { Typewriter } from '../components/Typewriter';
+import haveePhoto from '../../assets/havee-photo.jpg';
+import { ArrowRight, Linkedin, MapPin } from '../../components/icons';
+import { StatValue } from '../../components/StatValue';
+import { Typewriter } from '../../components/Typewriter';
+import { schoolRoles, schoolStats } from '../schoolContent';
 
-export function HeroSection() {
+export function SchoolHero() {
   const handleTilt = (event: MouseEvent<HTMLElement>) => {
     const card = event.currentTarget;
     const rect = card.getBoundingClientRect();
@@ -30,23 +30,25 @@ export function HeroSection() {
 
       <div className="container hero-inner">
         <div className="hero-copy">
+          <p className="eyebrow">School Leadership Profile</p>
+
           <h1 className="hero-name">
             Havee <span className="text-grad">Makedon</span>
           </h1>
 
-          <p className="hero-roles" aria-label={heroRoles.join(', ')}>
-            <Typewriter phrases={heroRoles} />
+          <p className="hero-roles" aria-label={schoolRoles.join(', ')}>
+            <Typewriter phrases={schoolRoles} />
           </p>
 
           <p className="hero-lead">
-            I build practical web products that connect clean, fast user experiences with
-            cloud-backed data and automation — from school-wide Firebase systems to production
-            business tools.
+            Educator and educational leader focused on what makes schools work — strong
+            instruction, clear systems, and support that reaches every student, from teacher
+            evaluation and special education planning to schoolwide tools that staff actually use.
           </p>
 
           <div className="hero-actions">
-            <a className="btn btn-primary" href="#projects">
-              View Projects
+            <a className="btn btn-primary" href="#internship">
+              Leadership Experience
               <ArrowRight className="arrow" />
             </a>
             <a className="btn btn-secondary" href="#contact">
@@ -54,17 +56,17 @@ export function HeroSection() {
             </a>
             <a
               className="btn btn-ghost"
-              href="https://github.com/hhmakedon"
+              href="https://www.linkedin.com/in/haveemakedon/"
               target="_blank"
               rel="noreferrer"
             >
-              <Github />
-              GitHub
+              <Linkedin />
+              LinkedIn
             </a>
           </div>
 
           <dl className="hero-stats">
-            {heroStats.map((stat) => (
+            {schoolStats.map((stat) => (
               <div className="stat" key={stat.label}>
                 <StatValue stat={stat} />
                 <dt className="stat-label">{stat.label}</dt>
@@ -84,9 +86,9 @@ export function HeroSection() {
             </div>
           </div>
           <div className="hero-card-meta">
-            <span>Google Cloud '25</span>
-            <span>5 Years Teaching</span>
-            <span>Full-Stack</span>
+            <span>M.Ed. Leadership</span>
+            <span>IL PEL · Admin</span>
+            <span>CS + AI Week ’26</span>
           </div>
         </aside>
       </div>

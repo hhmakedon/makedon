@@ -1,10 +1,38 @@
 import { useEffect, useState } from 'react';
+import type { ReactNode } from 'react';
 import { RevealSection } from '../components/RevealSection';
 import { ArrowRight, Copy, Github, Linkedin, Mail } from '../components/icons';
 
 const emailAddress = 'haveemakedon1@gmail.com';
 
-export function ContactSection() {
+type SocialLink = {
+  href: string;
+  label: string;
+  icon: ReactNode;
+};
+
+const defaultSocials: SocialLink[] = [
+  { href: 'https://www.linkedin.com/in/haveemakedon/', label: 'linkedin.com/in/haveemakedon', icon: <Linkedin /> },
+  { href: 'https://github.com/hhmakedon', label: 'github.com/hhmakedon', icon: <Github /> }
+];
+
+type ContactSectionProps = {
+  eyebrow?: string;
+  headline?: ReactNode;
+  sub?: string;
+  socials?: SocialLink[];
+};
+
+export function ContactSection({
+  eyebrow = '06 — Get in touch',
+  headline = (
+    <>
+      Let's build something <span className="text-grad">great</span>.
+    </>
+  ),
+  sub = 'Always happy to talk through ideas, projects, or collaborations. The fastest way to reach me is email.',
+  socials = defaultSocials
+}: ContactSectionProps) {
   const [toastMessage, setToastMessage] = useState('');
 
   useEffect(() => {
@@ -34,15 +62,10 @@ export function ContactSection() {
     <RevealSection id="contact" className="section-muted contact-section">
       <div className="container">
         <p className="eyebrow" style={{ justifyContent: 'center' }}>
-          06 — Get in touch
+          {eyebrow}
         </p>
-        <h2 className="contact-headline">
-          Let's build something <span className="text-grad">great</span>.
-        </h2>
-        <p className="contact-sub">
-          Always happy to talk through ideas, projects, or collaborations. The fastest way to reach
-          me is email.
-        </p>
+        <h2 className="contact-headline">{headline}</h2>
+        <p className="contact-sub">{sub}</p>
 
         <div className="contact-actions">
           <a className="btn btn-primary" href={`mailto:${emailAddress}`}>
@@ -57,14 +80,12 @@ export function ContactSection() {
         </div>
 
         <div className="contact-socials">
-          <a href="https://www.linkedin.com/in/haveemakedon/" target="_blank" rel="noreferrer">
-            <Linkedin />
-            linkedin.com/in/haveemakedon
-          </a>
-          <a href="https://github.com/hhmakedon" target="_blank" rel="noreferrer">
-            <Github />
-            github.com/hhmakedon
-          </a>
+          {socials.map((link) => (
+            <a key={link.href} href={link.href} target="_blank" rel="noreferrer">
+              {link.icon}
+              {link.label}
+            </a>
+          ))}
         </div>
 
         <div className={`toast ${toastMessage ? 'toast-visible' : ''}`} role="status" aria-live="polite">
