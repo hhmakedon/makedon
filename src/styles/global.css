@@ -609,7 +609,8 @@ img {
   gap: var(--space-2);
   padding: var(--space-4) var(--space-3) var(--space-2);
 }
-.hero-card-meta span {
+.hero-card-meta span,
+.hero-card-meta li {
   font-family: var(--font-mono);
   font-size: 0.72rem;
   font-weight: 500;

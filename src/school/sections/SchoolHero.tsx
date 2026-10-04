@@ -3,7 +3,7 @@ import haveePhoto from '../../assets/havee-photo.jpg';
 import { ArrowRight, Linkedin, MapPin } from '../../components/icons';
 import { StatValue } from '../../components/StatValue';
 import { Typewriter } from '../../components/Typewriter';
-import { schoolRoles, schoolStats } from '../schoolContent';
+import { degrees, schoolRoles, schoolStats } from '../schoolContent';
 
 export function SchoolHero() {
   const handleTilt = (event: MouseEvent<HTMLElement>) => {
@@ -85,11 +85,13 @@ export function SchoolHero() {
               </span>
             </div>
           </div>
-          <div className="hero-card-meta">
-            <span>M.Ed. Leadership</span>
-            <span>IL PEL · Admin</span>
-            <span>CS + AI Week ’26</span>
-          </div>
+          <ul className="hero-card-meta" aria-label="Degrees">
+            {degrees.map((item) => (
+              <li key={item.degree} title={`${item.degree}, ${item.school}`}>
+                {item.short}
+              </li>
+            ))}
+          </ul>
         </aside>
       </div>
     </section>
